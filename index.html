@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JVM Eletricity</title>
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header><img class="logo-header" src="imagens/Logo.svg" alt="">
+    <header>
+        <img class="logo-header" src="imagens/Logo.svg" alt="">
         <nav class="menu hiddem-pocket">
             <ul class="nav-links">
                 <a href="" class="link">Vantagens</a>
@@ -23,8 +24,74 @@
             <a href="" class="conta-link">Conta <img src="imagens/Conta.svg" alt=""></a>
         </nav>
     </header>
-    <main id="home">
+    <section id="home">
         <h1>Diga adeus à <span class="underline">Dependência</span> Energética!</h1>
-    </main>
+        <h2>com <b>painéis solares</b>, você controla seu próprio destino</h2>
+        <a href="" class="btx-tertiary">Quero conhecer</a>
+    </section>
+    <section id="vantagens">
+        <div class="vantagens-text">
+            <h1>Vantagens de usar <span class="underline">Energia Solar</span></h1>
+            <p>
+            De forma resumida, a energia gerada é através do sol (radiação solar). Para que seja possível captar a energia, painéis fotovoltaicos são instalados sob o telhado ou a cobertura da edificação, eles por sua vez captam a radiação e em contato com as células dos painéis fotovoltaicos, temos a geração de uma corrente contínua. Junto às células dos painéis fotovoltaicos, temos o inversor de corrente, que altera para corrente alternada, tensão 127/220V ou até 380V.<br>
+            A partir daí, são feitas as conexões com a rede interna do local, onde o sistema injeta a energia produzida, sendo uma nova fonte de energia a abastecer o empreendimento em paralelo com a conexão da concessionária local.
+            </p>
+        </div>
+        <img src="imagens/Painel.png" alt="">
+    </section>
+    <section id="verde">
+        <h1>Compromisso com a Natureza</h1>
+        <p>Sustentabilidade e tecnologia são as nossas aliadas em cada detalhe, em cada processo e já fazem parte do DNA da nossa empresa. Nós enxergamos um futuro completamente verde e estamos a um passo à frente na sustentabilidade, promovendo o uso consciente de energia limpa e econômica especialmente para você!</p>
+    </section>
+    <section id="solucoes">
+        <h1>Nossos <span class="underline">Projetos</span></h1>
+        <div class="grid-solucoes">
+            <div class="content-solucoes">
+                <img src="imagens/Comercial.png" alt="">
+                <span class="text-solucoes">Comercial</span>
+            </div>
+            <div class="content-solucoes">
+                <img src="imagens/Residencial.png" alt="">
+                <span class="text-solucoes">Residencial</span>
+            </div>
+            <div class="content-solucoes">
+                <img src="imagens/Industrial.png" alt="">
+                <span class="text-solucoes">Industrial</span>
+            </div>
+        </div>
+    </section>
+    <section id="orcamento">
+        <img src="imagens/BgOrcamento.png" alt="">
+        <div class="content-form">
+            <h1>Faça seu <span class="underline">Orçamento</span></h1>
+            <h2>Faça seu orçamento de Energia Solar com um Profissional</h2>
+            <form action="projectRps.jsp" method="post">
+                
+                <label for="">Proprietario</label>
+                <input type="text" name="nome_proprietario" class="right"><br>
+                <label for="">Endereço</label>
+                <input type="text" name="endereco" id="" class="right"><br>
+                <label for="">Tipo de Sistema</label>
+                <select name="tipo" id="" class="right">
+                    <option value="residencial">Residencial</option>
+                    <option value="comercial">Comercial</option>
+                    <option value="industrial">Industrial</option>
+                </select><br>
+                <label for="">Local de Instalação</label>
+                <select name="local_instalacao" id="" class="right">
+                    <option value="terraco">Terraço</option>
+                    <option value="telhado">Telhado</option>
+                    <option value="solo">Solo</option>
+                </select><br>
+                <label for="">Potência</label>
+                <input type="text" name="potencia_sistema" id="" class="right"><br>
+                <label for="">Data</label>
+                <input type="date" name="data" id="" class="right"><br>
+                <label for="">Valor</label>
+                <input type="text" name="preco_estimado" id="valor" onblur="comma()" class="right"><br>
+                <input type="submit" value="Solicitar">
+            </form>
+        </div>
+    </section>
 </body>
 </html>

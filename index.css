@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --azul : #3152F4;
+    --preto : #0D0D0D;
+    --branco : #FFF;
+    --cinza-claro : #F2F2F2;
+    --cinza-escuro : #6D6C7D;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    transition: all 10ms ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, section{
+    width: 100%;
+}
+
+
+/*EFEITO DE UNDERLINE NOS TEXTOS H1*/
+.underline{
+    position: relative;
+    z-index: 1;
+}
+
+.underline::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    margin-top: -1.1rem;
+    height: 0.5rem;
+    right: 0;
+    background-color: var(--azul);
+    width: 100%;
+}
+
+/*BUTÕES*/
+.btx-tertiary{
+    padding: .5rem 1rem;
+    border: var(--branco) .2rem solid;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--branco);
+    margin-top: 1rem;
+}
+
+.btx-tertiary:hover{
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    height: 6rem;
+    padding: 1.5rem 3rem;
+    background-color: var(--branco);
+}
+
+.logo-header{
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    gap: 1rem;
+    color: var(--preto);
+    font-weight: 500;
+}
+
+.link:hover{
+    color: var(--azul);
+}
+
+.conta-link{
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--azul);
+}
+
+.link{
+    color: var(--preto);
+}
+
+.conta-link:hover{
+    color: var(--preto);
+}
+
+.conta-link img{
+    height: 1.3rem;
+}
+
+.conta-link:hover img{
+    filter: brightness(20%);
+}
+
+
+/*HOME*/
+#home{
+   background-image: url(imagens/BgPaieis.png);
+   display: flex;
+   gap: 2rem;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: center;
+   padding: 3rem;
+   margin-top: 6rem;
+   height: 85vh;
+}
+
+#home h1 {
+    font-size: 2.3rem;
+    color: var(--branco);
+    width: 35rem;
+    text-align: center;
+}
+
+#home h2{
+    color: var(--branco);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*VANTAGENS*/
+#vantagens{
+    padding: 4rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#vantagens h1{
+    width: 50%;
+    font-size: 2rem;
+}
+
+#vantagens p{
+   text-align: justify;
+}
+
+.vantagens-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#vantagens img{
+    height: 30rem;
+    margin-right: -3rem;
+}
+
+/*VERDE*/
+#verde {
+    background-image: url(imagens/BgNatureza.png);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 6rem;
+}
+
+#verde h1{
+    font-size: 2rem;
+    color: var(--branco);
+}
+
+#verde p{
+    color: var(--branco);
+    text-align: center;
+}
+
+/*SOLUÇÕES*/
+#solucoes{
+    padding: 6rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#solucoes h1{
+    font-size: 2rem;
+}
+
+.grid-solucoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-solucoes{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+
+.text-solucoes{
+    font-weight: 500;
+    font-size: 1rem ;
+    color: var(--cinza-escuro);
+}
+
+/*ORÇAMENTO*/
+#orcamento{
+    display: flex;
+    padding-right: 3rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+#orcamento img{
+    height: 30rem;
+}
