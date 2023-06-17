@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JVM Eletricity</title>
+    <link rel="shortcut icon" href="imagens/Favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -66,32 +67,58 @@
             <h1>Faça seu <span class="underline">Orçamento</span></h1>
             <h2>Faça seu orçamento de Energia Solar com um Profissional</h2>
             <form action="projectRps.jsp" method="post">
-                
-                <label for="">Proprietario</label>
-                <input type="text" name="nome_proprietario" class="right"><br>
-                <label for="">Endereço</label>
-                <input type="text" name="endereco" id="" class="right"><br>
-                <label for="">Tipo de Sistema</label>
-                <select name="tipo" id="" class="right">
-                    <option value="residencial">Residencial</option>
-                    <option value="comercial">Comercial</option>
-                    <option value="industrial">Industrial</option>
-                </select><br>
-                <label for="">Local de Instalação</label>
-                <select name="local_instalacao" id="" class="right">
-                    <option value="terraco">Terraço</option>
-                    <option value="telhado">Telhado</option>
-                    <option value="solo">Solo</option>
-                </select><br>
-                <label for="">Potência</label>
-                <input type="text" name="potencia_sistema" id="" class="right"><br>
-                <label for="">Data</label>
-                <input type="date" name="data" id="" class="right"><br>
-                <label for="">Valor</label>
-                <input type="text" name="preco_estimado" id="valor" onblur="comma()" class="right"><br>
-                <input type="submit" value="Solicitar">
+                <div class="linha-form">
+                    <div class="celula-form">
+                        <label for="nome_proprietario">Proprietario</label>
+                        <input type="text" placeholder="Ex. Pedro Mendes" name="nome_proprietario" id="nome_proprietario" class="right">
+                    </div>
+                    <div class="celula-form">
+                        <label for="tipo">Tipo de Sistema</label>
+                        <select name="tipo" id="tipo" class="right">
+                            <option value="residencial" selected>Residencial</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="industrial">Industrial</option>
+                        </select>
+                    </div>
+                    <div class="celula-form">
+                        <label for="potencia_sistema">Potência</label>
+                        <input type="text" placeholder="127V" name="potencia_sistema" id="potencia_sistema" class="right">
+                    </div>
+                </div>
+                <div class="linha-form">
+                    <div class="celula-form endereco">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" placeholder="Digite seu endereço aqui..." id="endereco" class="right">
+                    </div>
+                    <div class="celula-form">
+                        <label for="local_instalacao">Local de Instalação</label>
+                        <select name="local_instalacao" id="local_instalacao" class="right">
+                            <option value="terraco" selected>Terraço</option>
+                            <option value="telhado">Telhado</option>
+                            <option value="solo">Solo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="linha-form">
+                    <div class="celula-form">
+                        <label for="data">Data</label>
+                        <input type="date" name="data" id="data" class="right">
+                    </div>
+                    <div class="celula-form">
+                        <label for="">Valor</label>
+                        <input type="text" placeholder="Digite o valor..." name="preco_estimado" id="valor" onblur="comma()">
+                    </div>
+                    <input type="submit" value="Solicitar Orçamento">
+                </div>
             </form>
         </div>
     </section>
+    <footer>
+        <div class="content-footer">
+            <img src="imagens/LogoBranco.svg" alt="">
+            <h1>(xx) xxxxx-xxxx</h1>
+        </div>
+        <div class="copyright">Pedro da Silva Mendes</div>
+    </footer>
 </body>
 </html>
