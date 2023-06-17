@@ -276,8 +276,8 @@ form{
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    color: var(--cinza-escuro);
-    font-size: .8rem;
+    color: var(--preto);
+    font-size: 1rem;
     font-weight: 500;
     align-items: flex-start;
     justify-content: flex-end;
@@ -298,6 +298,9 @@ input:not([type="submit"]),  select{
 input[type="submit"]{
     background-color: var(--azul);
     color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 3.2rem;
     font-weight: 500;
 }
