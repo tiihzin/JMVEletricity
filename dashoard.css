@@ -93,8 +93,8 @@ header{
 }
 
 /*PROJETOS*/
-#projetos{
-    margin-top: 3rem;
+#projetos, #edita-projeto{
+    margin-top: 4rem;
     width: 100%;
 }
 
