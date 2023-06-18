@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | JVM Eletricity</title>
+    <link rel="shortcut icon" href="imagens/Favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="dashoard.css">
+</head>
+<body>
+    <header>
+        <a class="profile">
+            <img src="imagens/FotoPerfil.svg" alt="">
+        </a>
+        <img class="logo-header" src="imagens/Logo.svg" alt="">
+        <a href="singin.html" class="sair">Sair</a>
+    </header>
+    <main id="projetos">
+        <a href="dashboard.html" class="content-title"><img src="imagens/Back.svg" alt=""><h1 id="title-projeto" class="title">Projeto Residêncial 01</h1></a>
+        <section id="content-form">
+            <form action="projectRps.jsp" method="post">
+                <div class="linha-form">
+                    <div class="celula-form">
+                        <label for="nome_proprietario">Proprietario</label>
+                        <input type="text" placeholder="Ex. Pedro Mendes" name="nome_proprietario" id="nome_proprietario" class="right">
+                    </div>
+                    <div class="celula-form">
+                        <label for="tipo">Tipo de Sistema</label>
+                        <select name="tipo" id="tipo" class="right">
+                            <option value="residencial" selected>Residencial</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="industrial">Industrial</option>
+                        </select>
+                    </div>
+                    <div class="celula-form">
+                        <label for="potencia_sistema">Potência</label>
+                        <input type="text" placeholder="127V" name="potencia_sistema" id="potencia_sistema">
+                    </div>
+                    <div class="celula-form">
+                        <label for="">Valor</label>
+                        <input type="text" placeholder="Digite o valor..." name="preco_estimado" id="valor" onblur="comma()">
+                    </div>
+                </div>
+                <div class="linha-form">
+                    <div class="celula-form endereco">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" placeholder="Digite seu endereço aqui..." id="endereco">
+                    </div>
+                    <div class="celula-form">
+                        <label for="local_instalacao">Local de Instalação</label>
+                        <select name="local_instalacao" id="local_instalacao">
+                            <option value="terraco" selected>Terraço</option>
+                            <option value="telhado">Telhado</option>
+                            <option value="solo">Solo</option>
+                        </select>
+                    </div>
+                    <div class="celula-form">
+                        <label for="data">Data</label>
+                        <input type="date" name="data" id="data">
+                    </div>
+                </div>
+                <div class="linha-form">
+                    <input type="submit" class="btx" value="Confirmar Alterações">
+                    <a href="" class="delete"><img src="imagens/Delete.svg" alt=""> Excluir Projeto</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
